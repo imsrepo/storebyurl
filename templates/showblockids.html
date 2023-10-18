@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>dateAdded</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for email in emails %}
+        <tr>
+            <td>{{email[0]}}</td>
+            <td>{{email[1]}}</td>
+            <td>{{email[2]}}</td>
+            
+        {% endfor %}
+        </tr>
+    </tbody>
+    </table>
+    <button id="copyButton">Copy Email Column</button>
+    <script>
+    </script>
+</body>
+</html>
