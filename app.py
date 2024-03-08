@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "URL POST HOME PAGE"
+    return "URL POST HOME PAGE - modified"
 
 # Route to save an email in the SQLite database
 @app.route('/storeids/<email>',)
