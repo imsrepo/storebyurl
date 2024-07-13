@@ -48,7 +48,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          python-location: './requirements.txt'
+          python-location: './requirments.txt'
           # cache: 'pip'
       # - run: pip install -r requirements.txt
 
@@ -64,7 +64,7 @@ jobs:
       - name: Upgrade pip and Install dependencies 
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirments.txt
 
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
