@@ -48,9 +48,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          python-location: './requirments.txt'
+          # python-location: './requirments.txt'
           # cache: 'pip'
-      # - run: pip install -r requirements.txt
+      # run: pip install -r requirements.txt
 
       - name: Create and start virtual environment
         run: |
